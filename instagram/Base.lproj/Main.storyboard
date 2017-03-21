@@ -105,7 +105,7 @@
         <!--Item-->
         <scene sceneID="8nw-R1-jIR">
             <objects>
-                <viewController id="eea-zp-JMO" sceneMemberID="viewController">
+                <viewController id="eea-zp-JMO" customClass="ProfileViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kf6-iB-8FP"/>
                         <viewControllerLayoutGuide type="bottom" id="kh0-WV-mbh"/>
@@ -113,9 +113,22 @@
                     <view key="view" contentMode="scaleToFill" id="Izt-vD-49B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlH-z8-e4J">
+                                <rect key="frame" x="163" y="292" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logOut:" destination="eea-zp-JMO" eventType="touchUpInside" id="6yt-1g-P6w"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zxZ-fG-sma"/>
+                    <connections>
+                        <outlet property="onLogOut" destination="ZlH-z8-e4J" id="SJT-Aa-85L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brS-x4-aaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

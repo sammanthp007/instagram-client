@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E05ABB91E80B0330032CBC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05ABB81E80B0330032CBC3 /* LoginViewController.swift */; };
+		5E05ABBB1E80B4F20032CBC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05ABBA1E80B4F20032CBC3 /* ProfileViewController.swift */; };
 		5E5A45111E80AAC6008DCBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A45101E80AAC6008DCBB7 /* AppDelegate.swift */; };
 		5E5A45161E80AAC6008DCBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A45141E80AAC6008DCBB7 /* Main.storyboard */; };
 		5E5A45181E80AAC6008DCBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A45171E80AAC6008DCBB7 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		26470A66C77146A905B3ADDA /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
 		2AFE2BB28C06DFDD5849BB22 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E05ABB81E80B0330032CBC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E05ABBA1E80B4F20032CBC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5E5A450D1E80AAC6008DCBB7 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5A45101E80AAC6008DCBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5A45151E80AAC6008DCBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				5E05ABB81E80B0330032CBC3 /* LoginViewController.swift */,
+				5E05ABBA1E80B4F20032CBC3 /* ProfileViewController.swift */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E05ABBB1E80B4F20032CBC3 /* ProfileViewController.swift in Sources */,
 				5E05ABB91E80B0330032CBC3 /* LoginViewController.swift in Sources */,
 				5E5A45111E80AAC6008DCBB7 /* AppDelegate.swift in Sources */,
 			);
