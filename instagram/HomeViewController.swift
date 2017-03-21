@@ -8,6 +8,8 @@
 
 import UIKit
 import Parse
+import ParseUI
+
 
 class HomeViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
      var posts = [PFObject]()

@@ -171,6 +171,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="JvX-3I-cIP" id="URb-Bc-Xo2"/>
+                                            <outlet property="workingImageView" destination="uUJ-NI-mOG" id="hc0-ho-tDy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
