@@ -86,7 +86,7 @@
         <!--Share-->
         <scene sceneID="PIb-I2-c1Q">
             <objects>
-                <viewController id="EQH-N8-qC4" sceneMemberID="viewController">
+                <viewController id="EQH-N8-qC4" customClass="ShareViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f2t-hH-GEH"/>
                         <viewControllerLayoutGuide type="bottom" id="FUl-xR-eHO"/>
@@ -94,13 +94,57 @@
                     <view key="view" contentMode="scaleToFill" id="Zlj-FS-jI1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNa-Bd-cLc">
+                                <rect key="frame" x="16" y="28" width="343" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-jz-CKY">
+                                <rect key="frame" x="16" y="282" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2L-fs-4a1">
+                                <rect key="frame" x="127" y="340" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload via Album"/>
+                                <connections>
+                                    <action selector="albumButtonClicked:" destination="EQH-N8-qC4" eventType="touchUpInside" id="LXF-ZX-kaf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoO-cJ-Mx7">
+                                <rect key="frame" x="123" y="401" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload via Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonClick:" destination="EQH-N8-qC4" eventType="touchUpInside" id="1i9-lg-X3k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgH-Dd-Dhp">
+                                <rect key="frame" x="161" y="466" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload!"/>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="EQH-N8-qC4" eventType="touchUpInside" id="9lw-TP-lu8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Share" id="BQD-Nw-gE7"/>
+                    <connections>
+                        <outlet property="albumButton" destination="e2L-fs-4a1" id="LGq-jx-6Sk"/>
+                        <outlet property="cameraButton" destination="AoO-cJ-Mx7" id="Mmb-LA-E0d"/>
+                        <outlet property="captionTextFiled" destination="yVg-jz-CKY" id="yip-0y-8qc"/>
+                        <outlet property="postPhotoLabel" destination="KNa-Bd-cLc" id="jwD-uJ-jGf"/>
+                        <outlet property="uploadButton" destination="wgH-Dd-Dhp" id="QB2-la-JM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Un-V4-pjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="-85"/>
+            <point key="canvasLocation" x="796" y="-85.007496251874073"/>
         </scene>
         <!--Profile-->
         <scene sceneID="8nw-R1-jIR">
