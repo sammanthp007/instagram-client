@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E05ABB91E80B0330032CBC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05ABB81E80B0330032CBC3 /* LoginViewController.swift */; };
 		5E5A45111E80AAC6008DCBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A45101E80AAC6008DCBB7 /* AppDelegate.swift */; };
-		5E5A45131E80AAC6008DCBB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A45121E80AAC6008DCBB7 /* ViewController.swift */; };
 		5E5A45161E80AAC6008DCBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A45141E80AAC6008DCBB7 /* Main.storyboard */; };
 		5E5A45181E80AAC6008DCBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A45171E80AAC6008DCBB7 /* Assets.xcassets */; };
 		5E5A451B1E80AAC6008DCBB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A45191E80AAC6008DCBB7 /* LaunchScreen.storyboard */; };
@@ -18,9 +18,9 @@
 /* Begin PBXFileReference section */
 		26470A66C77146A905B3ADDA /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
 		2AFE2BB28C06DFDD5849BB22 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E05ABB81E80B0330032CBC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E5A450D1E80AAC6008DCBB7 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5A45101E80AAC6008DCBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E5A45121E80AAC6008DCBB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E5A45151E80AAC6008DCBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E5A45171E80AAC6008DCBB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5A451A1E80AAC6008DCBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E05ABB51E80B0130032CBC3 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E05ABB81E80B0330032CBC3 /* LoginViewController.swift */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		5E05ABB61E80B0190032CBC3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		5E05ABB71E80B01F0032CBC3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		5E5A45041E80AAC6008DCBB7 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +83,10 @@
 		5E5A450F1E80AAC6008DCBB7 /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				5E05ABB71E80B01F0032CBC3 /* models */,
+				5E05ABB61E80B0190032CBC3 /* views */,
+				5E05ABB51E80B0130032CBC3 /* view controllers */,
 				5E5A45101E80AAC6008DCBB7 /* AppDelegate.swift */,
-				5E5A45121E80AAC6008DCBB7 /* ViewController.swift */,
 				5E5A45141E80AAC6008DCBB7 /* Main.storyboard */,
 				5E5A45171E80AAC6008DCBB7 /* Assets.xcassets */,
 				5E5A45191E80AAC6008DCBB7 /* LaunchScreen.storyboard */,
@@ -212,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5A45131E80AAC6008DCBB7 /* ViewController.swift in Sources */,
+				5E05ABB91E80B0330032CBC3 /* LoginViewController.swift in Sources */,
 				5E5A45111E80AAC6008DCBB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +401,7 @@
 				5E5A45211E80AAC6008DCBB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
