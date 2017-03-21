@@ -36,6 +36,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else{
             print("No Current user")
         }
+        //UserDidLogOut
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UserDidLogOut" ), object: nil, queue: OperationQueue.main) {(NSNotification)->Void in //the logout button information is received here
+            
+            print("Inside the change app delegate")
+            let storyBoard = UIStoryboard(name : "Main", bundle: nil)
+            let viewController = storyBoard.instantiateInitialViewController()
+            self.window?.rootViewController = viewController
+            
+        }
+        
         return true
     }
 
