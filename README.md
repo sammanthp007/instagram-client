@@ -4,6 +4,9 @@ Sammans Instagram is a photo sharing app using Parse as its backend.
 
 Time spent: 14  hours spent in total
 
+### Reference
+- Assignment Quickstart #1 - Parse Setup and Authentication: [Codepath link](https://courses.codepath.com/course_videos/ios_university/youtube/D7ysTGm9dOs*3Flist=PLrT2tZ9JRrf5nnkKcHEO49fJITZqsNQQ1?title=Assignment+Quickstart+%231+-+Parse+Setup+and+Authentication)
+
 ## User Stories
 
 The following **required** functionality is completed:
